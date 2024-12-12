@@ -17,9 +17,11 @@ export default async function DashboardLayout({
 
   return (
     <>
+
       {process.env.NODE_ENV === 'production' ? (
         <DemoSiteWarningNotification />
-      ) : null}
+      ) : null}  
+
       {children}
     </>
   )
